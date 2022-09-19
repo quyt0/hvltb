@@ -6,6 +6,10 @@ function writeText() {
     var dob = document.getElementById('dob').value;
     var gender = document.getElementById('gender').value;
     var mark = document.getElementById('mark').value;
+    var minu = Math.floor(Math.random() * (9 - 5 + 1) + 5);
+    var sec = Math.floor(Math.random() * (40 - 1 + 1) + 1);
+    var tik = Math.floor(Math.random() * 100) + 1;
+    var times = '' + minu + ':' + sec + '.' + tik;
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
     var imageObj = new Image();
@@ -19,6 +23,7 @@ function writeText() {
         context.fillStyle = "black";
         context.font = "15px Roboto";
         context.fillText(mark, 750, 350);
+        context.fillText(times, 1000, 350);
     };
     imageObj.src = "img.png"; 
 }
