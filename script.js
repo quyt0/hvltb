@@ -17,13 +17,20 @@ function writeText() {
         context.drawImage(imageObj, 10, 10);
         context.font = "bold 15px Roboto";
         context.fillStyle = "#3B3B3B";
+        context.fillText("A", 115, 173) //Bảng A;
+        context.fillText("THPT Xuân Hoà", 126, 224.5);
+        context.fillText("Vĩnh Phúc", 520, 173);
+        context.fillText("12", 490, 225);
+        context.fillText("Phúc Yên", 930, 173);
         context.fillText(fullName, 125, 123);
         context.fillText(dob, 528, 123);
         context.fillText(gender, 900, 123);
         context.fillStyle = "black";
         context.font = "15px Roboto";
-        context.fillText(mark, 750, 350);
-        context.fillText(times, 1000, 350);
+        context.fillText(mark, 750, 350) //Điểm;
+        context.fillText("Vòng loại 2022", 122, 350);
+        context.fillText("Tuần 2", 390, 350);
+        context.fillText(times, 1000, 350) //Thời gian;
     };
     imageObj.src = "img.png"; 
 }
